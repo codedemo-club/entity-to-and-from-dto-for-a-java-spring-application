@@ -15,4 +15,14 @@ public class PostServiceImpl implements PostService {
     public List<Post> findAll() {
         return (List<Post>) this.postRepository.findAll();
     }
+
+    @Override
+    public Post save(Post post) {
+        return this.postRepository.save(post);
+    }
+
+    @Override
+    public Post findById(Long id) {
+        return this.postRepository.findById(id).get();
+    }
 }
