@@ -13,7 +13,7 @@ public class Post {
 
     private String url;
 
-    private Date date;
+    private Date submissionDate;
 
     @ManyToOne
     private User user;
@@ -42,12 +42,12 @@ public class Post {
         this.url = url;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getSubmissionDate() {
+        return submissionDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setSubmissionDate(Date submissionDate) {
+        this.submissionDate = submissionDate;
     }
 
     public User getUser() {
